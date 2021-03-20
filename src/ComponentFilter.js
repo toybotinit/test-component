@@ -8,6 +8,7 @@ export class ComponentFilter extends LitElement {
         padding: 25px;
         color: var(--component-filter-text-color, #000);
       }
+      
     `;
   }
 
@@ -21,17 +22,18 @@ export class ComponentFilter extends LitElement {
   constructor() {
     super();
     this.title = 'Hey there';
-    this.counter = 5;
+    this.counter = 0 ;
   }
 
   __increment() {
-    this.counter += 1;
+    this.counter += 2;
   }
 
   render() {
     return html`
+      <h1>Jyoti Rospigliosi :P</h1>
       <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <button @click=${this.__increment}>incrementar en 2</button>
     `;
   }
 }
